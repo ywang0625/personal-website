@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    font-family: "Sometype Mono", monospace;
+}
+
+body {
+    background-color: rgb(49, 41, 52);
+    color: white;
+}
