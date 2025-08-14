@@ -4,6 +4,8 @@
   export let techstack: string = '';
   export let description: string;
   export let codeLink: string = '';
+  export let gameLink: string = '';
+  export let linkedIn: string = '';
 </script>
 
 <div class="project-card">
@@ -18,7 +20,13 @@
 
       <p class="project-description">{description}</p>
     {#if codeLink}
-        <a class="code-link" href={codeLink} target="_blank" rel="noopener noreferrer">View Code</a>
+        <a class="links" id="code-link" href={codeLink} target="_blank" rel="noopener noreferrer">View Code</a>
+    {/if}
+    {#if gameLink}
+        <a class="links" id="game-link" href={gameLink} target="_blank" rel="noopener noreferrer">Play Game</a>
+    {/if}
+    {#if linkedIn}
+        <a class="links" id="linkedin-link" href={linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn Post</a>
     {/if}
 </div>
 
@@ -63,8 +71,13 @@
         padding: 1.5rem 0;
     }
 
-    .code-link {
+    .links {
         display: inline-block;
         color: #bb82d8;
+        cursor: pointer;
+    }
+
+    .links:hover{
+        color: #9114d0;
     }
 </style>
