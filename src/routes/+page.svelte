@@ -5,6 +5,7 @@
   import linkedIn from '$lib/assets/2_linkedin.png';
   import itch from '$lib/assets/3_game.png'; 
   import { gsap } from 'gsap';
+  import {base} from '$app/paths';
 
   onMount(() => {
     gsap.from(".left-section", {
@@ -25,7 +26,7 @@
         I like building 2D games on Unity and exploring more in the tech field. 
         Feel free to connect and contact me!
       </p>
-      <a href="src/lib/assets/Yueh-Ming Wang - Resume.pdf" download="Yueh-Ming Wang - Resume.pdf" class="resume-button">
+      <a href={`${base}/Yueh-Ming_Wang_Resume.pdf`} download="Yueh-Ming Wang - Resume.pdf" class="resume-button">
         Download Resume
       </a>
     </div>
