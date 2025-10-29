@@ -4,7 +4,6 @@
   import gitHub from '$lib/assets/1_github.png';
   import linkedIn from '$lib/assets/2_linkedin.png';
   import itch from '$lib/assets/3_game.png'; 
-  import resume from '$lib/assets/Yueh-Ming Wang - Resume.pdf';
   import { gsap } from 'gsap';
 
   onMount(() => {
@@ -26,7 +25,7 @@
         I like building 2D games on Unity and exploring more in the tech field. 
         Feel free to connect and contact me!
       </p>
-      <a href={resume} download="Yueh-Ming Wang - Resume.pdf" class="resume-button">
+      <a href="src/lib/assets/Yueh-Ming Wang - Resume.pdf" download="Yueh-Ming Wang - Resume.pdf" class="resume-button">
         Download Resume
       </a>
     </div>
