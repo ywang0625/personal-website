@@ -26,7 +26,7 @@
         I like building 2D games on Unity and exploring more in the tech field. 
         Feel free to connect and contact me!
       </p>
-      <a href={resume} download class="resume-button">
+      <a href={resume} download="Yueh-Ming Wang - Resume.pdf" class="resume-button">
         Download Resume
       </a>
     </div>
